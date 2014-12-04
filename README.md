@@ -1,5 +1,5 @@
 # jquery.smartmessage.js
- jquery.smartmessage.js ist eìn Plugin zum erstellen von SmartMessages (Message-Overlays/Popups) abhängig von Triggern 
+jquery.smartmessage.js ist eìn Plugin zum erstellen von SmartMessages (Message-Overlays/Popups) abhängig von Triggern 
 (z.B. Exit-Intent) und anderen Vorausetzungen (Targeting) auszuspielen. Die Message kann über verschiedene Optionen nach den eigenen Wünschen gestaltet werden. Die Message verfügt standardmäßig über einen CSS-Only Close Button der überschrieben werden kann. Die Targeting/Tracking Funktionalität kann über die Optionen beliebig angepasst werden.
  
 Benötigt wird jQuery 1.9+ oder 2.0+. Unterstützte Browser sind IE 8-11, Firefox, Chrome, Safari und Opera.
@@ -50,8 +50,8 @@ var options = {
     'debugMode' : true,
     'recurrenceTime' : 5,
     'tracking' : function(event, config) {
-      // call your analytics function with "click/view/close" and your message name "test message".
-      yourAnalyticsFunction(eventName, config.name);
+      // google event tracking
+      _gaq.push(['_trackEvent', 'Smart Messaging', config.name, eventName]);
     },
     'dataEventBinding' : {
       'click' : {
