@@ -1,5 +1,4 @@
 # jquery.smartmessage.js
-<<<<<<< HEAD
 jquery.smartmessage.js ist ein JQuery-Plugin um Message-Overlays/Popups (SmartMessages) abhängig von Anzeige-Triggern (z.B. Exit-Intent) anzuzeigen. Eine Message kann über verschiedene Optionen beliebig gestaltet und positioniert werden. Die Messagebox hat einen Close-Button der über die Optionen deaktiviert werden kann. 
 =======
 
@@ -20,7 +19,6 @@ Folgende Dateien müssen eingebunden werden. (Die jquery.etracker-smartmessage.j
 ### Options
 Die Options werden per Objekt bei der Initalisierung überreicht.
 
-<<<<<<< HEAD
 ```html
 var options = {
     'id': 'example'
@@ -65,7 +63,6 @@ var options = {
 var smartMessage = $.smartMessage(options);
 ```
 
-<<<<<<< HEAD
 <dt>
   id : string (default <code>smartMessage</code>)
 </dt>
@@ -162,7 +159,7 @@ Gibt die Zeit für den Greeter und AttentionGrabber-Trigger an, bis diese ausgel
  </code>
 </dd> 
 ####}
-<!-- hier vielleicht noch einen Hinweis:  Weitere Infos zum targeting (Link zum Targeting Abschnitt)-->
+
 #### message {
 <dt>
   content : string (default <code>''</code>)
@@ -430,7 +427,6 @@ Sobald die jquery.etracker-smartmessage.js eingebunden ist, wird das targeting u
 
 Um die Targeting-API-Daten von etracker in der SmartMessage verwenden zu können, muss das Config-Objekt unter targeting den korrekten Secure-Code erhalten.
 
-<<<<<<< HEAD
 ```html
 =======
 ```js
@@ -452,7 +448,6 @@ Um die Targeting-API-Daten von etracker in der SmartMessage verwenden zu können
 Möchte man gerne die Targeting-API und gleichzeitig andere API's anfragen ist dies über eine kleine Kapselung einfach zu lösen. Bei folgendem Beispiel wird abhängig vom Wetter des Users und mindestens zwei Besuchen die Message angezeigt.
 
 
-<<<<<<< HEAD
 ```html
 =======
 ```js
