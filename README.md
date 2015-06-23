@@ -1,4 +1,5 @@
 # jquery.smartmessage.js
+
 jquery.smartmessage.js ist ein JQuery-Plugin um Message-Overlays/Popups (SmartMessages) abhängig von Anzeige-Triggern (z.B. Exit-Intent) anzuzeigen. Eine Message kann über verschiedene Optionen beliebig gestaltet und positioniert werden. Die Messagebox hat einen Close-Button der über die Optionen deaktiviert werden kann. 
 =======
 
