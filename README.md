@@ -16,11 +16,6 @@ Folgende Dateien müssen eingebunden werden. (Die jquery.etracker-smartmessage.j
 </head>
 ```
 
-## Beispiele
-
-Live-Beispiele lassen sich unter [http://etracker.github.io/jquery.smartmessage/](http://etracker.github.io/jquery.smartmessage/ "Live-Beispiele") ausprobieren.
-
-
 ## API Reference
 
 
