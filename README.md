@@ -1,12 +1,12 @@
 # jquery.smartmessage.js
 
-jquery.smartmessage.js ist ein JQuery-Plugin um Message-Overlays/Popups (SmartMessages) abhängig von Anzeige-Triggern (z.B. Exit-Intent) anzuzeigen. Eine Message kann über verschiedene Optionen beliebig gestaltet und positioniert werden. Die Messagebox hat einen Close-Button der über die Optionen deaktiviert werden kann.
+jquery.smartmessage.js ist ein JQuery-Plugin um Smart Messages (Message-Overlays) abhängig von Anzeige-Triggern (z.B. Exit-Intent) anzuzeigen. Eine Message kann über verschiedene Optionen beliebig gestaltet und positioniert werden. Die Messagebox hat einen Close-Button, der über die Optionen deaktiviert werden kann.
 
 =======
 
 ## Einbindung
 
-Folgende Dateien müssen eingebunden werden. (Die jquery.etracker-smartmessage.js ist nur einzubinden, wenn die Etracker-Targeting-API und die etracker Zählung für die SmartMessage benötigt wird)
+Folgende Dateien müssen eingebunden werden. (Die jquery.etracker-smartmessage.js ist nur einzubinden, wenn die etracker-Targeting-API und die etracker Zählung für die Smart Message benötigt werden)
 
 
 ```html
@@ -20,23 +20,23 @@ Folgende Dateien müssen eingebunden werden. (Die jquery.etracker-smartmessage.j
 
 
 ### Options
-Die Options werden per Objekt bei der Initalisierung überreicht.
+Die Options werden per Objekt bei der Initalisierung übergeben.
 
 * id : string (default <code>smartMessage</code>)
-  * Definiert die DOM-Id der SmartMessage. Ist der Container nicht im DOM vorhanden, so wird er angelegt und an den body angefügt.
+  * Definiert die DOM-Id der Smart Message. Ist der Container nicht im DOM vorhanden, so wird er angelegt und an den body angefügt.
 * name : string (default <code>Smart Message</code>)
   * Definiert den Namen der Message und wird für das Tracking verwendet.
 * debugMode : boolean (default <code>false</code>)
-  * Ist der debugMode aktiviert, werden in der JS-Console einige Log-Informationen zum Ablauf/Initalisierung der Message ausgegeben. Die Recurrence-Time der Message wird auch nicht beachtet und die Message wird immer ausgegeben, sobald das Targeting/Trigger zutreffen.
+  * Ist der debugMode aktiviert, werden in der JS-Console einige Log-Informationen zum Ablaufen/Initalisieren der Message ausgegeben. Die Recurrence-Time der Message wird nicht beachtet und die Message wird immer ausgegeben, sobald das Targeting und/oder der Trigger zutreffen.
 * recurrenceTime : integer (default <code>14</code>)
-  * Zeit in Tagen wie lange eine Message nicht nochmal angezeigt wird, wenn sie ausgelöst wurde.
+  * Zeigt an, wie viele Tage eine Message nicht nochmal angezeigt wird, wenn sie ausgelöst wurde.
 * dataEventBinding : object
-  * Über die Event-Bindings lassen sich Events an HTML-Elemente in der Message setzen. 
- Für das Binding wird an ein bestehndes HTML Tag folgender Code ergänzt.
- <code>data-smartmessage="test"</code> Über einen Eintrag in dem Objekt lässt sich eine Interaktion wie "click" an eine Funktion hinter "test" binden.
+  * Über die Event-Bindings lassen sich Events mit HTML-Elementen in der Message verknüpfen. 
+ Für das Binding wird an ein bestehendes HTML-Tag folgender Code angehängt.
+ <code>data-smartmessage="test"</code> Über einen Eintrag in dem Objekt lässt sich eine Interaktion wie "Click" an eine Funktion hinter "test" binden.
  Default Binding
 * tracking : function (default: <code>function(eventType, configuration){}</code>)
-  * Wird ein View, Click oder Close Event ausgeführt, wird auch die definierte tracking-Funktion aufgerufen und kann die Interaktionen der Message tracken. Wird die jquery.etracker-smartmessage.js verwendet, braucht diese Funktion nicht extra definiert werden.
+  * Wenn ein View, Click oder Close Event ausgeführt wird, wird auch die definierte tracking-Funktion aufgerufen, die die Interaktionen der Message trackt. Wird die jquery.etracker-smartmessage.js verwendet, braucht diese Funktion nicht extra definiert werden.
 
 ```js
 var options = {
