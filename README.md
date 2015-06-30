@@ -224,7 +224,7 @@ Um die Targeting-API-Daten von etracker in der Smart Message verwenden zu könne
 
 #### etracker Targeting-API mit anderen APIs verbinden
 
-Wenn man gleichzeitig die Targeting-API und andere APIs anfragen möchte, ist dies über eine kleine Kapselung einfach zu lösen. In folgendem Beispiel wird abhängig vom Wetter des Users bei mindestens zwei Besuchen die Message angezeigt.
+Wenn man gleichzeitig die Targeting-API und andere APIs anfragen möchte, ist dies über eine kleine Kapselung einfach zu lösen. In folgendem Beispiel wird die Message abhängig vom Wetter des Users bei mindestens zwei Besuchen angezeigt.
 
 
 ```js
