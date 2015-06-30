@@ -16,11 +16,11 @@ Folgende Dateien müssen eingebunden werden. (Die jquery.etracker-smartmessage.j
 </head>
 ```
 
-## API Reference
+## API-Referenz
 
 
-### Options
-Die Options werden per Objekt bei der Initialisierung übergeben.
+### Optionen
+Die Optionen werden per Objekt bei der Initialisierung übergeben.
 
 * id : string (default <code>smartMessage</code>)
   * Definiert die DOM-Id der Smart Message. Ist der Container nicht im DOM vorhanden, so wird er angelegt und an den body angefügt.
