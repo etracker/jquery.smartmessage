@@ -65,7 +65,7 @@ var smartMessage = $.smartMessage(options);
 #### trigger
 
 * type : string (default <code>exitIntent</code>)
-  * <code>exitIntent</code> Die Message wird angezeigt, sobald der Besucher den sichtbaren Bereich der Seite mit der Maus verläßt.
+  * <code>exitIntent</code> Die Message wird angezeigt, sobald der Besucher den sichtbaren Bereich der Seite mit der Maus verlässt.
   * <code>attentionGrabber</code> Die Message wird angezeigt, wenn der Benutzer nicht mit der Seite interagiert und in den Timeout läuft (default: 10 Sek).
   * <code>greeter</code> Nach ablaufen eines Timeout (default: 10 Sek), wird die Message angezeigt.
   * <code>none</code> Die Message wird direkt angezeigt. (Interessant für Targeting-Only)
