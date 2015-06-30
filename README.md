@@ -62,7 +62,7 @@ var options = {
 var smartMessage = $.smartMessage(options);
 ```
 
-#### trigger
+#### Trigger
 
 * type : string (default <code>exitIntent</code>)
   * <code>exitIntent</code> Die Message wird angezeigt, sobald der Besucher den sichtbaren Bereich der Seite mit der Maus verlässt.
@@ -86,7 +86,7 @@ var testMessage = $.smartMessage({
 });
 ```
 
-#### targeting
+#### Targeting
 
 * config : object (default <code>{}</code>)
   * Key/Value Objekt zur Verwendung im Targeting Collector. (jquery.etracker-smartmessage.js benötigt diese Option)
@@ -115,7 +115,7 @@ var testMessage = $.smartMessage({
   }
 });
 ```
-#### message
+#### Message
 
 * content : string (default <code>''</code>)
  * Dient zur alternativen Definition des HTML-Contents der Message, sofern nicht schon ein <code>div</code> Objekt im DOM mit der ID aus den options angelegt wurde.
