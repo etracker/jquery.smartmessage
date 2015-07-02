@@ -1,12 +1,12 @@
 # jquery.smartmessage.js
 
-jquery.smartmessage.js ist ein JQuery-Plugin, um Smart Messages (Message-Overlays) abhängig von Anzeige-Triggern (z.B. Exit-Intent) anzuzeigen. Eine Message kann über verschiedene Optionen beliebig gestaltet und positioniert werden. Die Messagebox hat einen Close-Button, der über die Optionen deaktiviert werden kann.
+jquery.smartmessage.js is a JQuery-Plugin in order to display Smart Messages (message overlays) dependent on display triggers like for example Exit-Intent. A message may be designed and positioned as wished via different options. The message box has a close button which can be deactivated by the options.
 
 =======
 
-## Einbindung
+## Integration
 
-Folgende Dateien müssen eingebunden werden. (Die jquery.etracker-smartmessage.js ist nur einzubinden, wenn die etracker-Targeting-API und die etracker Zählung für die Smart Message benötigt werden).
+The following files have to be integrated. (jquery.etracker-smartmessage.js only has to be integrated if the etracker Targeting-API and the etracker counting are needed for the Smart Message)
 
 
 ```html
@@ -16,10 +16,10 @@ Folgende Dateien müssen eingebunden werden. (Die jquery.etracker-smartmessage.j
 </head>
 ```
 
-## API-Referenz
+## API reference
 
 
-### Optionen
+### Options
 Die Optionen werden per Objekt bei der Initialisierung übergeben.
 
 * id : string (default <code>smartMessage</code>)
