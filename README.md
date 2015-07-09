@@ -20,23 +20,23 @@ The following files have to be integrated. (jquery.etracker-smartmessage.js only
 
 
 ### Options
-Die Optionen werden per Objekt bei der Initialisierung übergeben.
+The options are transferred during initialisation via object.
 
 * id : string (default <code>smartMessage</code>)
-  * Definiert die DOM-Id der Smart Message. Ist der Container nicht im DOM vorhanden, so wird er angelegt und an den body angefügt.
+  * Defines the DOM Id of the Smart Message. If the container does not exist in the DOM, it will be created and added to the body.
 * name : string (default <code>Smart Message</code>)
-  * Definiert den Namen der Message und wird für das Tracking verwendet.
+  * Defines the message name and is used for the tracking.
 * debugMode : boolean (default <code>false</code>)
-  * Ist der debugMode aktiviert, werden in der JS-Console einige Log-Informationen zum Ablaufen/Initalisieren der Message ausgegeben. Die Recurrence-Time der Message wird nicht beachtet und die Message wird immer ausgegeben, sobald das Targeting und/oder der Trigger zutreffen.
+  * If the debugMode is activated, the output of the JS console contains some log information regarding the processing/initialisation of the message. The recurrence time of the message is ignored and the message will always be delivered as soon as the targeting and/or the trigger apply.
 * recurrenceTime : integer (default <code>14</code>)
-  * Zeigt an, wie viele Tage eine Message nicht nochmal angezeigt wird, wenn sie ausgelöst wurde.
+  * Indicates how many days a message will not be displayed for a second time once it has been triggered.
 * dataEventBinding : object
-  * Über die Event-Bindings lassen sich Events mit HTML-Elementen in der Message verknüpfen. 
- Für das Binding wird an ein bestehendes HTML-Tag folgender Code angehängt.
- <code>data-smartmessage="test"</code> Über einen Eintrag in dem Objekt lässt sich eine Interaktion wie "Click" an eine Funktion hinter "test" anbinden.
+  * The event binding allows to link events to HTML elements in the message. 
+ The following code is added to an existing HTML tag for the binding.
+ <code>data-smartmessage="test"</code> Via an entry in the object an interaction like "click" can be attached to a function behind "test".
  Default Binding
 * tracking : function (default: <code>function(eventType, configuration){}</code>)
-  * Wenn ein View, Click oder Close Event ausgeführt wird, wird auch die definierte Tracking-Funktion aufgerufen, die die Interaktionen der Message trackt. Wird die jquery.etracker-smartmessage.js verwendet, braucht diese Funktion nicht extra definiert werden.
+  * When a View, Click or Close event is executed the defined tracking function that tracks the message interactions is also called. If the jquery.etracker-smartmessage.js is used it is not necessary to define this function.
 
 ```js
 var options = {
