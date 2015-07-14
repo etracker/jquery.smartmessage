@@ -65,12 +65,12 @@ var smartMessage = $.smartMessage(options);
 #### Trigger
 
 * type : string (default <code>exitIntent</code>)
-  * <code>exitIntent</code> Die Message wird angezeigt, sobald der Besucher den sichtbaren Bereich der Seite mit der Maus verlässt.
-  * <code>attentionGrabber</code> Die Message wird angezeigt, wenn der Benutzer nicht mit der Seite interagiert und in den Timeout läuft (default: 10 Sek).
-  * <code>greeter</code> Nach Ablaufen eines Timeout (default: 10 Sek), wird die Message angezeigt.
-  * <code>none</code> Die Message wird direkt angezeigt. (Interessant für Targeting-Only)
+  * <code>exitIntent</code> The message is displayed as soon as the visitor leaves the visible page area with the mouse.
+  * <code>attentionGrabber</code> The message is displayed when the visitor does not interact with the page and runs into the timeout(default: 10 s).
+  * <code>greeter</code> The message is displayed after expiration of a timeout (default: 10 s).
+  * <code>none</code> The message is displayed directly. (Interesting for Targeting-Only)
 * timeout : integer (default <code>10</code>)
-  * Gibt an, wie viele Sekunden es dauert, bis die Trigger Greeter und Attention-Grabber ausgelöst werden.
+  * Indicates how many seconds it lasts until Greeter and Attention Grabber are triggered.
 
 ```js
 var testMessage = $.smartMessage({
@@ -89,11 +89,11 @@ var testMessage = $.smartMessage({
 #### Targeting
 
 * config : object (default <code>{}</code>)
-  * Key/Value Objekt zur Verwendung im Targeting Collector. (jquery.etracker-smartmessage.js benötigt diese Option)
+  * Key/Value object to be used in the Targeting Collector. (jquery.etracker-smartmessage.js needs this option)
 * collector : function (default <code>function(callback){ callback({}); }</code>)
-  * Die definierte Funktion ruft eine Callback-Funktion auf und übergibt ihr die Daten, die z.B. von APIs geholt wurden und die zur Benutzung in der Condition zur Verfügung stehen sollen.
+  * The defined function calls a callback function and transfers the data (got from APIs for example) that shall be available to be used in the condition.
 * condition : function (default <code>null</code>)
-  * Wird diese Funktion definiert, ist Targeting aktiv für die Message. Die Funktionsparameter kommen aus den Daten der collector-Funktion.
+  * When this function is defined targeting for the message is active. The function parameters come from the data of the collector function.
 
 ```js
 var testMessage = $.smartMessage({
