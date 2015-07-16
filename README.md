@@ -137,7 +137,7 @@ var testMessage = $.smartMessage({
 * animation : function (default <code>function(obj){$(obj).show();}</code>)
   * With the help of the called function you can determine how the message will slide in. The function is called for the overlay and the message container.
 * closeButton : boolean (default <code>true</code>)
-  * Positions a Close buttons (pure css) in the upper right corner of the message. When the Close button is clicked the message is closed and the tracking for "close" is called. Via the css class .jquerySmartMessage .closeButton the button can be edited/exchanged.
+  * Positions a Close button (pure css) in the upper right corner of the message. When the Close button is clicked the message is closed and the tracking for "close" is called. Via the css class .jquerySmartMessage .closeButton the button can be edited/exchanged.
 * overlay : boolean (default <code>true</code>)
   * Shows an overlay when the message is displayed. (Page is blacked out)
 * overlayOpacity : string (default <code>0.5</code>)
