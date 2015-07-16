@@ -6,7 +6,7 @@ jquery.smartmessage.js is a JQuery-Plugin in order to display Smart Messages (me
 
 ## Integration
 
-The following files have to be integrated. (jquery.etracker-smartmessage.js only has to be integrated if the etracker Targeting-API and the etracker counting are needed for the Smart Message)
+The following files have to be integrated. (jquery.etracker-smartmessage.js only has to be integrated if the etracker Targeting API and the etracker counting are needed for the Smart Message)
 
 
 ```html
@@ -118,9 +118,9 @@ var testMessage = $.smartMessage({
 #### Message
 
 * content : string (default <code>''</code>)
- * Dient zur alternativen Definition des HTML-Contents der Message, sofern nicht schon ein <code>div</code> Objekt im DOM mit der ID aus den options angelegt wurde.
+ * Serves to define the HTML content alternatively unless a <code>div</code> object has already been created in the DOM with the ID from the options. 
 * styles : object
-  * Key/Value Objekt mit CSS-Style-Eigenschaften für die Message.
+  * Key/Value object with css style properties for the message.
   Default:
   ```css
   'z-index'           : '90001',
@@ -133,17 +133,17 @@ var testMessage = $.smartMessage({
   'position'        : 'absolute'
   ```
 * autoPosition : boolean (default <code>true</code>)
-  * Positioniert den Message-Container über eine interne Hilfsfunktion immer in der Mitte der Seite. Auch beim Scrolling/Resizing bleibt die Message mittig.
+  * Positions the message container via an internal subsidiary function always in the middle of the page. Even during scrolling/resizing the message remains in the centre.
 * animation : function (default <code>function(obj){$(obj).show();}</code>)
-  * Mit Hilfe der aufgerufenen Funktion kann der Einblendungseffekt bestimmt werden. Die Funktion wird für das Overlay und den Message-Container aufgerufen.
+  * With the help of the called function you can determine how the message will slide in. The function is called for the overlay and the message container.
 * closeButton : boolean (default <code>true</code>)
-  * Positioniert den einen Close-Button (Pure-CSS) oben rechts in der Message. Wird auf den Close-Button gedrückt, schließt sich die Message und das Tracking für "close" wird aufgerufen. Über die CSS Klasse .jquerySmartMessage .closeButton lässt sich der Button umgestalten/austauschen.
+  * Positions a Close buttons (pure css) in the upper right corner of the message. When the Close button is clicked the message is closed and the tracking for "close" is called. Via the css class .jquerySmartMessage .closeButton the button can be edited/exchanged.
 * overlay : boolean (default <code>true</code>)
-  * Zeigt beim Anzeigen der Message ein Overlay an. (Seite wird verdunkelt)
+  * Shows an overlay when the message is displayed. (Page is blacked out)
 * overlayOpacity : string (default <code>0.5</code>)
-  * Deckkraft des Overlays.
+  * Opacity of the overlays.
 * iframe : object
-  * Wird die src-Option im Objekt von Iframe definiert, wird in der Message ein Iframe mit der angegebenen Seite geladen. Die Größe des Iframe lässt sich über die Optionen width und height anpassen.
+  * If the src option is defined within the object of iframe an iframe with the indicated page is loaded in the message. The iframe size can be edited via the options width and height.
   ```js
   'iframe' : {
     'src' : 'http://github.com',
@@ -175,27 +175,27 @@ var testMessage = $.smartMessage({
 });
 ```
 
-### Methoden auf dem Objekt
+### Methods on the object
 
 * object.getConfiguration()
-  * Gibt die aktuelle Konfiguration zurück.
+  * Returns the current configuration.
 * object.closeMessage()
-  * Schließt die Message.
+  * Closes the message.
 * object.showMessage()
-  * Zeigt die Message unabhängig vom Trigger/Targeting an.
+  * Shows the message regardless of the trigger/targeting.
 * object.trackClick()
-  * Zählt über die definierte Tracking-Methode einen Klick.
+  * Counts a click via the defined tracking method.
 * object.onShowMessage(callback)
-  * Die definierte Callback-Funktion wird beim Anzeigen der Message aufgerufen.
+  * The defined callback function is called when the message is shown.
 * object.onCloseMessage(callback)
-  * Die definierte Callback-Funktion wird beim Schließen der Message aufgerufen.
+  * The defined callback function is called when the message is closed.
 * object.onTargetingData(callback(data))
-  * Beim erfolgreichen Laden der Targeting-Daten vom Collector wird die Callback-Funktion mit den Daten als Parameter aufgerufen.
+  * When the targeting data are successfully loaded from the collector the callback function is called with the data as parameters.
 * object.onClickMessage(callback)
-  * Beim Klick auf ein Element, das mit <code>data-smartmessage="trackClick"</code> definiert wurde, wird die Callback-Funktion aufgerufen.
+  * The callback function is called when clicking on an element that is defined with <code>data-smartmessage="trackClick"</code>.
 
-## Nutzung mit etracker
-Sobald die jquery.etracker-smartmessage.js eingebunden ist, wird das Targeting und Tracking für etracker eingerichtet.
+## Use with etracker
+As soon as jquery.etracker-smartmessage.js is integrated the targeting and tracking for etracker is set up.
 ```html
 ...
 <script src="jquery.min.js"></script>
@@ -204,9 +204,9 @@ Sobald die jquery.etracker-smartmessage.js eingebunden ist, wird das Targeting u
 </head>
 ```
 
-### Konfiguration von Targeting
+### Configure the targeting
 
-Um die Targeting-API-Daten von etracker in der Smart Message verwenden zu können, muss das Config-Objekt unter targeting den korrekten Secure Code (Account-Schlüssel 2) erhalten.
+In order to be able to use the targeting API data from etracker in the Smart Message the config object under targeting needs the correct secure code (account key 2).
 
 ```js
 // example
@@ -222,9 +222,9 @@ Um die Targeting-API-Daten von etracker in der Smart Message verwenden zu könne
 ...
 ```
 
-#### etracker Targeting-API mit anderen APIs verbinden
+#### Combine the etracker Targeting API with other APIs
 
-Wenn man gleichzeitig die Targeting-API und andere APIs anfragen möchte, ist dies über eine kleine Kapselung einfach zu lösen. In folgendem Beispiel wird die Message abhängig vom Wetter des Users bei mindestens zwei Besuchen angezeigt.
+If you want to request data from the Targeting API and other APIs at the same time this can easily be done by a small encapsulation. In the following example the message is shown with at least two visits depending on the weather on the location of the user.
 
 
 ```js
@@ -251,7 +251,7 @@ Wenn man gleichzeitig die Targeting-API und andere APIs anfragen möchte, ist di
 ...
 ```
 
-### etracker Tracking
+### etracker tracking
 
-Das Tracking der Messages erfolgt automatisch. Die Zählung fließt in die entsprechenden etracker Reports und kann dort ausgewertet werden. Über die Option <code>name</code> lässt sich der Name der Smart Message definieren und somit in den Reports einfach wiederfinden.
+Tracking of the messages is done automatically. The counting flows into the corresponding etracker reports where it can be evaluated. The option <code>name</code> allows to define the name of the Smart Message so that it can be easily found in the reports.
 
